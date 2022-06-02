@@ -1,9 +1,8 @@
 #include<stdio.h>
-#include<unistd.h<
 /**
-*main - entry
+*main - print size of data
 *
-* Return: Always 1
+* Return: Always 0
 */
 int main(void)
 {
