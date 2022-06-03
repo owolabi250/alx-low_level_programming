@@ -1,33 +1,24 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - a program that prints lowercase and uppercase alphabets
  *
- * Return: Always 0 (Success)
+ * Return: return 0
  */
-
 int main(void)
 {
-	int n, lastdigit;
+	char ch, p;
 
-	srand(time(0))
-		n = rand() - RAND_MAX / 2;
-	/* code goes here*/
-	lastdigit = n % 10;
-	if (lastdigit > 5)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		printf("%d is positive\n", n);
+		putchar(ch);
 	}
-	else if	(lastdigit == 0)
+	for (p = 'A'; p <= 'Z'; p++)
 	{
-		printf("%d is zero\n", n);
+		putchar(p);
 	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+	putchar('\n');
 	return (0);
 }
