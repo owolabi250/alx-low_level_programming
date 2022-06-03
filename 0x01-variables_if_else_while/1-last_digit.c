@@ -1,33 +1,20 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - a program that prints alphabets
  *
- * Return: Always 0 (Success)
+ * Return: return 0
  */
-
 int main(void)
 {
-	int n, lastdigit;
+	char ch;
 
-	srand(time(0))
-		n = rand() - RAND_MAX / 2;
-	/* code goes here*/
-	lastdigit = n % 10;
-	if (lastdigit > 5)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		printf("%d is positive\n", n);
+		putchar(ch);
 	}
-	else if	(lastdigit == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+	putchar('\n');
 	return (0);
 }
