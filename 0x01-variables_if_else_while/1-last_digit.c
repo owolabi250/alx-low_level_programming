@@ -3,18 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints alphabets
+ * main - program that prints the status of the last digit number
  *
  * Return: return 0
  */
 int main(void)
 {
-	char ch;
+	int n, lastNumber;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	lastNumber = n % 10;
+
+	if (lastNumber == 0)
 	{
-		putchar(ch);
+		printf("Last digit of %d is %d and is 0\n", n, lastNumber);
 	}
-	putchar('\n');
+	else if (lastNumber > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastNumber);
+	}
+	else if (lastNumber < 6)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, lastNumber);
+		printf("\n");
+	}
 	return (0);
-}
+}}
