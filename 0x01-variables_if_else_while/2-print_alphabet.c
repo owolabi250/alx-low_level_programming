@@ -1,20 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - a program that prints alphabets
- *
- * Return: return 0
+ * main - Alphabets print is fun
+ * Description: Printing char alphabets
+ * Return: 0 if successful
  */
+
 int main(void)
 {
-	char ch;
+	char alpha = 'a';
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	while (alpha <= 'z')
 	{
-		putchar(ch);
+		putchar(alpha);
+		alpha++;
 	}
 	putchar('\n');
+
 	return (0);
 }

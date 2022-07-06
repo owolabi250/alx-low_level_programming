@@ -1,25 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - a program that print letters and no.s using putchar
- *
- * Return: return 0
+ * main - entry point for the program
+ * Description: Program that prints all the numbers of base 16 in lowercase
+ * Return: 0 if the program is executed successfully
  */
+
 int main(void)
 {
-	int n;
-	char ch;
+	int num = 48;
 
-	for (n = 0; n < 10; n++)
+	while (num <= 102)
 	{
-		putchar(n + '0');
+		putchar(num);
+
+		if (num == 57)
+			num += 39;
+		++num;
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
-	}
+
 	putchar('\n');
+
 	return (0);
 }
